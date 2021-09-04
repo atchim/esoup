@@ -18,8 +18,8 @@ src_unpack() {
 
 src_configure() {
   local myfeatures=(
-    $(usex battery)
-    $(usex https)
+    $(usex battery battery '')
+    $(usex https https '')
   )
   cargo_src_configure --no-default-features
 }
