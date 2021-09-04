@@ -6,7 +6,7 @@ DESCRIPTION='The minimal, blazing-fast, and infinitely customizable prompt for a
 EGIT_REPO_URI=https://github.com/starship/starship.git
 HOMEPAGE=https://starship.rs
 
-IUSE='+battery +https'
+IUSE='+battery +http'
 KEYWORDS=~amd64
 LICENSE=ISC
 SLOT=0
@@ -19,7 +19,7 @@ src_unpack() {
 src_configure() {
   local myfeatures=(
     $(usex battery battery '')
-    $(usex https https '')
+    $(usex http http '')
   )
   cargo_src_configure --no-default-features
 }
