@@ -1,9 +1,12 @@
 # To Do List
 
-## To Do
+## Backlog
 
-- [ ] Add ebuild for [media-gfx/pastel](https://github.com/sharkdp/pastel).
-- [ ] Add `doc` use flag for `app-misc/xplr`.
-- [ ] Enhance ebuild for `dev-libs/libspotify`.
+- [ ] `dev-libs/libspotify`
   - [ ] Add support for `doc` use flag.
   - [ ] Add support for `examples` use flag.
+
+## To Do
+
+- [ ] `media-gfx/pastel`
+  - [ ] Add ebuild file.

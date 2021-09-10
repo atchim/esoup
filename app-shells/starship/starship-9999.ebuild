@@ -8,7 +8,7 @@ HOMEPAGE=https://starship.rs
 
 IUSE='+battery +http'
 KEYWORDS=~amd64
-LICENSE=ISC
+LICENSE='Apache-2.0 Apache-2.0-with-LLVM-exceptions Boost-1.0 BSD BSD-2 CC0-1.0 ISC MIT MPL-2.0 Unlicense ZLIB'
 SLOT=0
 
 src_unpack() {

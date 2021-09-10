@@ -23,6 +23,6 @@ src_prepare() {
 src_compile() { return 0; }
 
 pkg_postinst() {
-  optfeature 'image display support' 'sys-apps/fbset x11-misc/xdotool www-client/w3m[imlib]'
+  optfeature 'image display support' 'sys-apps/fbset www-client/w3m[imlib] x11-misc/xdotool'
   optfeature 'XDG support' 'x11-misc/xdg-user-dirs x11-misc/xdg-utils'
 }
