@@ -16,7 +16,7 @@ QA_MULTILIB_PATHS=(
 
 S="$WORKDIR/$P-Linux-x86_64-release"
 
-src_compile() { return 0; }
+src_compile() { :; }
 
 src_install() {
   emake prefix="$D/$EPREFIX/usr" install

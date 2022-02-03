@@ -8,7 +8,7 @@ KEYWORDS='~amd64'
 LICENSE='MIT'
 SLOT=0
 
-src_compile() { return 0; }
+src_compile() { :; }
 
 src_install() {
 	dobin pfetch

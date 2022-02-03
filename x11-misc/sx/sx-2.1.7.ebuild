@@ -13,7 +13,7 @@ RDEPEND='
   x11-base/xorg-server
 '
 
-src_compile() { return 0; }
+src_compile() { :; }
 
 src_install() {
   emake install DESTDIR="$D" PREFIX="$EPREFIX/usr"

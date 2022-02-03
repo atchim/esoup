@@ -20,7 +20,7 @@ src_prepare() {
   default
 }
 
-src_compile() { return 0; }
+src_compile() { :; }
 
 pkg_postinst() {
   optfeature 'image display support' 'sys-apps/fbset www-client/w3m[imlib] x11-misc/xdotool'
