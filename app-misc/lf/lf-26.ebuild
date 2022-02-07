@@ -91,3 +91,7 @@ src_install() {
 pkg_postinst() {
   use X && xdg_desktop_database_update
 }
+
+pkg_postrm() {
+  use X && xdg_desktop_database_update
+}
