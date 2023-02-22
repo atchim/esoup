@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/charmbracelet/vhs"
 SRC_URI="https://github.com/charmbracelet/vhs/archive/v${PV}.tar.gz"
 SRC_URI+=" https://github.com/atchim/esoup/releases/download/v9999/${CATEGORY}-${P}-vendor.tar.xz"
 
-LICENSE="Apache-2.0 BSD-3-Clause MIT MPL-2.0"
+LICENSE="Apache-2.0 BSD MIT MPL-2.0"
 IUSE="examples"
 KEYWORDS="~amd64"
 SLOT="0"
