@@ -9,7 +9,6 @@ DESCRIPTION="Your CLI home video recorder"
 HOMEPAGE="https://github.com/charmbracelet/vhs"
 SRC_URI="https://github.com/charmbracelet/vhs/archive/v${PV}.tar.gz"
 SRC_URI+=" https://github.com/atchim/esoup/releases/download/v9999/${CATEGORY}-${P}-vendor.tar.xz"
-#S="${WORKDIR}/${P}"
 
 LICENSE="Apache-2.0 BSD-3-Clause MIT MPL-2.0"
 IUSE="examples"
@@ -28,7 +27,7 @@ src_install() {
 	dobin vhs
 	dodoc README.md
 
-	if use examples ; then
+	if use examples; then
 		dodoc -r examples
 		docompress -x /usr/share/doc/${PF}/examples
 	fi
