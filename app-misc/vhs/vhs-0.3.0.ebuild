@@ -29,6 +29,6 @@ src_install() {
 
 	if use examples; then
 		dodoc -r examples
-		docompress -x /usr/share/doc/${PF}/examples
+		docompress -x "/usr/share/doc/${PF}/examples"
 	fi
 }
