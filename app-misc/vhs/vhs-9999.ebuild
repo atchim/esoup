@@ -3,16 +3,14 @@
 
 EAPI=8
 
-inherit go-module
+inherit git-r3 go-module
 
 DESCRIPTION="Your CLI home video recorder"
 HOMEPAGE="https://github.com/charmbracelet/vhs"
-SRC_URI="https://github.com/charmbracelet/vhs/archive/v${PV}.tar.gz"
-SRC_URI+=" https://github.com/atchim/esoup/releases/download/v9999/${CATEGORY}-${P}-vendor.tar.xz"
+EGIT_REPO_URI="https://github.com/charmbracelet/vhs.git"
 
 LICENSE="Apache-2.0 BSD MIT MPL-2.0"
 IUSE="examples"
-KEYWORDS="~amd64"
 SLOT="0"
 
 RDEPEND="
@@ -22,6 +20,11 @@ RDEPEND="
 "
 
 RESTRICT="test"
+
+src_unpack() {
+	git-r3_src_unpack
+	go-module_live_vendor
+}
 
 src_compile() {
     ego build
