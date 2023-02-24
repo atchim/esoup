@@ -9,7 +9,7 @@ DESCRIPTION="Terminal file manager"
 HOMEPAGE="https://pkg.go.dev/github.com/gokcehan/lf"
 EGIT_REPO_URI="https://github.com/gokcehan/lf.git"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0 BSD MIT"
 IUSE="examples"
 SLOT="0"
 
