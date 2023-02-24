@@ -6,7 +6,7 @@ EAPI=8
 inherit bash-completion-r1 git-r3 go-module desktop xdg-utils
 
 DESCRIPTION="Terminal file manager"
-HOMEPAGE="https://github.com/gokcehan/lf"
+HOMEPAGE="https://pkg.go.dev/github.com/gokcehan/lf"
 EGIT_REPO_URI="https://github.com/gokcehan/lf.git"
 
 LICENSE="MIT"
@@ -24,8 +24,8 @@ src_compile () {
 
 
 src_install() {
-	dobin "${PN}"
-	doman "${PN}.1"
+	dobin lf
+	doman lf.1
 
 	dodoc README.md
 
@@ -36,10 +36,12 @@ src_install() {
 			new_example="${new_example%.example}"
 			newdoc "${example}" "${new_example}"
 		done
+		docompress -x "/usr/share/doc/${PF}/examples"
 	fi
 
 	docinto etc
 	dodoc etc/{lf.{csh,ps1,vim},lfcd.{cmd,csh,ps1,sh}}
+	docompress -x "/usr/share/doc/${PF}/etc"
 
 	newbashcomp  etc/lf.bash lf
 
