@@ -3,7 +3,7 @@
 #
 EAPI=8
 
-DESCRIPTION="Drag and drop source/target for X"
+DESCRIPTION="Simple drag-and-drop source/sink for X or Wayland"
 HOMEPAGE="https://github.com/mwh/dragon"
 SRC_URI="https://github.com/mwh/dragon/archive/refs/tags/v${PV}.tar.gz"
 
