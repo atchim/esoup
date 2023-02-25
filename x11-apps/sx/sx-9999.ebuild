@@ -22,8 +22,6 @@ src_compile() {
 }
 
 src_install() {
-	# NOTE: Makefile install is not used since it messes up with FHS/Gentoo
-	# policy paths.
 	dobin sx
 	doman sx.1
 	dodoc README
